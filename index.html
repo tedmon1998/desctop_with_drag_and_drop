@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Tunyan Edmon, 607-91</title>
+    <link rel="stylesheet" href="src/index.css" />
+</head>
+
+<body>
+    <div class="switch">
+        <div class="switch-label">
+            <div>
+                <label for="set_file">Защитить</label>
+            </div>
+            <div>
+                <input type="radio" checked name="file" id="set_file" value="set">
+            </div>
+        </div>
+        <div class="switch-label">
+            <div>
+                <label for="get_file">Открыть</label>
+            </div>
+            <div>
+                <input type="radio" name="file" id="get_file" value="get">
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="dd__container">
+            <h1 id="title">Перетащите сюда файл, который хотите защитить</h1>
+        </div>
+        <div class="display__container">
+            <table class="display"></table>
+        </div>
+    </div>
+    </div>
+
+    <div class="password__container">
+        <div class="input">
+            <input type="password" id="pass" placeholder="введите пароль для защиты">
+        </div>
+        <div class="input">
+            <input type="password" id="pass_repeat" placeholder="повторите парол пароль для защиты">
+        </div>
+        <div class="password__error">
+            <span id="password__error"></span>
+        </div>
+        <div class="button__container">
+            <div class="button" id="password_cancel"><span>Отмена</span></div>
+            <div class="button" id="password_send"><span>Установить</span></div>
+        </div>
+    </div>
+
+    <div class="settings__container">
+        <div class="input">
+            <input type="password" id="pass_check" placeholder="введите пароль">
+        </div>
+        <div class="password__error">
+            <span id="password__check__error"></span>
+        </div>
+        <div class="button__container">
+            <div class="button" id="password_check_cancel"><span>Отмена</span></div>
+            <div class="button" id="password_unblock"><span>Разблокировать</span></div>
+            <div class="button" id="password_check"><span>Открыть</span></div>
+        </div>
+    </div>
+
+    <script src="src/secret.js"></script>
+    <script src="src/alert_window.js"></script>
+
+
+</body>
+
+</html>
